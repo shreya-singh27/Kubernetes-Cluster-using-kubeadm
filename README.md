@@ -6,26 +6,26 @@ The setup simulates a real-world CI/CD environment where Jenkins manages automat
 The aim was to configure everything manually from scratch — without relying on pre-built images or Helm charts — to better understand each step and how these tools integrate.
 
 ---
+
 ## Folder Structure
 
 kubeadm-jenkins-ansible/
-│
-├── docker/
-│   ├── ansible/
-│   │   ├── Dockerfile
-│   │   └── site.yml
-│   └── jenkins/
-│       └── Dockerfile
-│
-├── manifests/
-│   ├── ansible-deployment.yaml
-│   ├── jenkins-deployment.yaml
-│   └── jenkins-service.yaml
-│
-└── scripts/
-    ├── install-ansible.sh
-    ├── install-jenkins.sh
-    └── setup-cluster.sh
+- docker/
+  - ansible/
+    - Dockerfile
+    - site.yml
+  - jenkins/
+    - Dockerfile
+
+- manifests/
+  - ansible-deployment.yaml
+  - jenkins-deployment.yaml
+  - jenkins-service.yaml
+
+- scripts/
+  - install-ansible.sh
+  - install-jenkins.sh
+  - setup-cluster.sh
 
 ---
 
@@ -74,8 +74,7 @@ Bash – Automation scripting.
 
 ---
 
-GitHub Repository
-🔗 Kubernetes-Cluster-using-kubeadm
+GitHub Repository-https://github.com/shreya-singh27/Kubernetes-Cluster-using-kubeadm.git
 
 ---
 ## Conclusion
