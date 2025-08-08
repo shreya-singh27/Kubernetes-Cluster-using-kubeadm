@@ -1,4 +1,4 @@
-#Kubernetes Cluster using Kubeadm, Jenkins & Ansible
+# Kubernetes Cluster using Kubeadm, Jenkins & Ansible
 
 This project demonstrates how to set up a Kubernetes cluster using kubeadm and automate deployment tasks with Ansible and Jenkins.
 The setup simulates a real-world CI/CD environment where Jenkins manages automation, Ansible handles configuration management, and Kubernetes orchestrates workloads.
@@ -8,35 +8,25 @@ The aim was to configure everything manually from scratch — without relying on
 ---
 ## Folder Structure
 
-- kubeadm-jenkins-ansible/
+kubeadm-jenkins-ansible/
+│
+├── docker/
+│   ├── ansible/
+│   │   ├── Dockerfile
+│   │   └── site.yml
+│   └── jenkins/
+│       └── Dockerfile
+│
+├── manifests/
+│   ├── ansible-deployment.yaml
+│   ├── jenkins-deployment.yaml
+│   └── jenkins-service.yaml
+│
+└── scripts/
+    ├── install-ansible.sh
+    ├── install-jenkins.sh
+    └── setup-cluster.sh
 
- - docker/
-
-  - ansible/
-
-   - Dockerfile
-
-   - site.yml
-
-  - jenkins/
-
-   - Dockerfile
-
- - manifests/
-
-  - ansible-deployment.yaml
-
-  - jenkins-deployment.yaml
-
-  - jenkins-service.yaml
-
- - scripts/
-
-  - install-ansible.sh
-
-  - install-jenkins.sh
-
-  - setup-cluster.sh
 ---
 
 ## What I Did
@@ -81,6 +71,7 @@ Docker – Containerization.
 Flannel – Kubernetes CNI plugin for networking.
 
 Bash – Automation scripting.
+
 ---
 
 GitHub Repository
@@ -100,4 +91,6 @@ Using Docker to containerize services for Kubernetes deployment.
 
 Automating deployments with Bash scripts.
 
-This project is a solid foundation for DevOps workflows where CI/CD pipelines and configuration management tools integrate seamlessly with Kubernetes.
+---
+
+### This project is a solid foundation for DevOps workflows where CI/CD pipelines and configuration management tools integrate seamlessly with Kubernetes.
